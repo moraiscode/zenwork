@@ -342,7 +342,7 @@
                             <thead>
                                 <tr class="text-white">
                                     <!-- <th scope="col"><input class="form-check-input" type="checkbox"></th> -->
-                                    <th scope="col-md-auto">Trabalho</th>
+                                    <th scope="col" style="padding-right: 6em;">Trabalho</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Copy</th>
                                     <th scope="col">LP</th>
