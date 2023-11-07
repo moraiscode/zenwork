@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var newStatus = document.getElementById('newStatus').value;
 
         if (newTrabalho && newStatus) {
-            addRow(newTrabalho, newStatus, ['NÃO', 'NÃO', 'NÃO', 'NÃO']);
+            addRow(newTrabalho, newStatus, ['Não', 'Não', 'Não', 'Não']);
             document.getElementById('newTrabalho').value = '';
             document.getElementById('newStatus').value = '';
             document.getElementById('addRowModal').classList.remove('show');
