@@ -2,7 +2,7 @@
     {
         "id": "_8jk9usvsc",
         "trabalho": "Projeto A",
-        "status": "Iniciado",
+        "status": "Aguardando",
         "buttons": [
             "NDA",
             "NDA",
@@ -24,7 +24,7 @@
     {
         "id": "_7ztec2scb",
         "trabalho": "Projeto C",
-        "status": "Conclu\u00eddo",
+        "status": "Aguardando",
         "buttons": [
             "N\u00c3O",
             "SIM",
@@ -46,7 +46,7 @@
     {
         "id": "_qv9wtxrmk",
         "trabalho": "gdfsfsdfsdgf",
-        "status": "dsagadasdasd",
+        "status": "Aguardando",
         "buttons": [
             "N\u00c3O",
             "N\u00c3O",

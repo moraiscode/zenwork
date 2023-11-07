@@ -21,21 +21,18 @@ document.addEventListener('DOMContentLoaded', function () {
         saveData();
     }
 
-    window.addNewRow = function () {
-        var newTrabalho = document.getElementById('newTrabalho').value;
-        var newStatus = document.getElementById('newStatus').value;
+    window.addRow = function (trabalho, status, buttons) {
+        var newItem = {
+            id: generateId(),
+            trabalho: trabalho,
+            status: status,
+            buttons: buttons
+        };
 
-        if (newTrabalho && newStatus) {
-            addRow(newTrabalho, newStatus, ['Não', 'Não', 'Não', 'Não']);
-            document.getElementById('newTrabalho').value = '';
-            document.getElementById('newStatus').value = '';
-            document.getElementById('addRowModal').classList.remove('show');
-            document.body.classList.remove('modal-open');
-            document.body.style.paddingRight = '';
+        data.push(newItem);
 
-            // Adicione esta linha para carregar os dados após adicionar uma nova linha
-            renderTable();
-        }
+        // Salvar os dados atualizados no JSON
+        saveData();
     };
 
     window.changeStatus = function (button) {
@@ -74,6 +71,17 @@ document.addEventListener('DOMContentLoaded', function () {
         xhr.send(jsonData);
     }
 
+    window.saveData = function () {
+        // Salvar os dados no JSON (substitua esta parte pelo seu código de salvamento)
+        // Exemplo simples para ilustração:
+        var jsonString = JSON.stringify(data);
+        localStorage.setItem('data', jsonString);
+
+        // Recarregar a tabela com os dados atualizados
+        renderTable();
+    };
+
+
     function loadData() {
         // Carregar os dados do arquivo JSON no servidor
         var xhr = new XMLHttpRequest();
@@ -97,8 +105,6 @@ document.addEventListener('DOMContentLoaded', function () {
         xhr.send();
     }
 
-
-
     function renderTable() {
         // Limpar a tabela
         document.getElementById('tableBody').innerHTML = '';
@@ -106,12 +112,21 @@ document.addEventListener('DOMContentLoaded', function () {
         // Adicionar linhas à tabela com base nos dados carregados
         data.forEach(function (item) {
             var row = `<tr data-id="${item.id}">
-                            <td contenteditable="true" class="trabalho text-primary">${item.trabalho}</td>
-                            <td contenteditable="true" class="status">${item.status}</td>
-                            <td><button id="btn_${item.id}_1" class="btn btn-secondary" data-id="${item.id}" data-index="1" onclick="changeStatus(this)">${item.buttons[0]}</button></td>
-                            <td><button id="btn_${item.id}_2" class="btn btn-secondary" data-id="${item.id}" data-index="2" onclick="changeStatus(this)">${item.buttons[1]}</button></td>
-                            <td><button id="btn_${item.id}_3" class="btn btn-secondary" data-id="${item.id}" data-index="3" onclick="changeStatus(this)">${item.buttons[2]}</button></td>
-                            <td><button id="btn_${item.id}_4" class="btn btn-secondary" data-id="${item.id}" data-index="4" onclick="changeStatus(this)">${item.buttons[3]}</button></td>
+                            <td contenteditable="false" class="trabalho w-content text-primary">${item.trabalho}</td>
+                            <td>
+                                <select class="form-select" onchange="changeStatusDropdown(this, '${item.id}')">
+                                    <option value="Aguardando" ${item.status === 'Aguardando' ? 'selected' : ''}>Aguardando</option>
+                                    <option value="Não Iniciado" ${item.status === 'Não Iniciado' ? 'selected' : ''}>Não Iniciado</option>
+                                    <option value="Cancelado" ${item.status === 'Cancelado' ? 'selected' : ''}>Cancelado</option>
+                                    <option value="Parado" ${item.status === 'Parado' ? 'selected' : ''}>Parado</option>
+                                    <option value="Iniciado" ${item.status === 'Iniciado' ? 'selected' : ''}>Iniciado</option>
+                                    <option value="Concluído" ${item.status === 'Concluído' ? 'selected' : ''}>Concluído</option>
+                                </select>
+                            </td>
+                            <td><button id="btn_${item.id}_1" class="btn btn-light" data-id="${item.id}" data-index="1" onclick="changeStatus(this)">${item.buttons[0]}</button></td>
+                            <td><button id="btn_${item.id}_2" class="btn btn-light" data-id="${item.id}" data-index="2" onclick="changeStatus(this)">${item.buttons[1]}</button></td>
+                            <td><button id="btn_${item.id}_3" class="btn btn-light" data-id="${item.id}" data-index="3" onclick="changeStatus(this)">${item.buttons[2]}</button></td>
+                            <td><button id="btn_${item.id}_4" class="btn btn-light" data-id="${item.id}" data-index="4" onclick="changeStatus(this)">${item.buttons[3]}</button></td>
                         </tr>`;
 
             document.getElementById('tableBody').innerHTML += row;
@@ -121,17 +136,32 @@ document.addEventListener('DOMContentLoaded', function () {
                 var button = document.getElementById(`btn_${item.id}_${i}`);
                 if (item.buttons[i - 1] === 'Não') {
                     button.classList.add('btn-danger');
-                    button.classList.remove('btn-success', 'btn-secondary');
+                    button.classList.remove('btn-success', 'btn-light');
                 } else if (item.buttons[i - 1] === 'Sim') {
                     button.classList.add('btn-success');
-                    button.classList.remove('btn-danger', 'btn-secondary');
+                    button.classList.remove('btn-danger', 'btn-light');
                 } else {
-                    button.classList.add('btn-secondary');
+                    button.classList.add('btn-light');
                     button.classList.remove('btn-danger', 'btn-success');
                 }
             }
         });
     }
+
+    window.changeStatusDropdown = function (selectElement, itemId) {
+        var selectedStatus = selectElement.value;
+
+        // Encontrar o item no array de dados
+        var selectedItem = data.find(item => item.id === itemId);
+
+        // Atualizar o status no item encontrado
+        if (selectedItem) {
+            selectedItem.status = selectedStatus;
+
+            // Salvar os dados atualizados no JSON
+            saveData();
+        }
+    };
 
 
     // Carregar os dados quando a página é carregada
