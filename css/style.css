@@ -297,3 +297,7 @@
 .amarelo {
     color: #f0d56d;
 }
+
+.w-content {
+    width: max-content;
+}

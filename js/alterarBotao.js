@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var uniqueId = generateUniqueId();
 
         var row = `<tr data-id="${uniqueId}">
-                        <td contenteditable="true" class="trabalho">${trabalho}</td>
+                        <td contenteditable="true" class="trabalho col-md-auto">${trabalho}</td>
                         <td contenteditable="true" class="status">${status}</td>
                         <td><button id="btn_${uniqueId}_1" class="btn btn-secondary" data-id="${uniqueId}" data-index="1" onclick="changeStatus(this)">${buttons[0]}</button></td>
                         <td><button id="btn_${uniqueId}_2" class="btn btn-secondary" data-id="${uniqueId}" data-index="2" onclick="changeStatus(this)">${buttons[1]}</button></td>
