@@ -306,6 +306,7 @@
 
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <h6 class="mb-0"><a href="" data-bs-toggle="modal" data-bs-target="#addRowModal"><i class="fas fa-user-plus"></i></a></h6>
+                        <!-- <h6 class="mb-0"><a href=""><i class="fas fa-file-export"></i></a></h6> -->
                         <a href="">Mostrar tudo</a>
                     </div>
 
