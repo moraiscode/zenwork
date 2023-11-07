@@ -327,7 +327,7 @@
                                         <div class="mb-3">
                                             <label for="newStatus" class="form-label">Status</label>
                                             <select class="form-select" id="newStatus">
-                                                <option value="Aguardando">Aguardando</option>
+                                                <option selected value="Aguardando">Aguardando</option>
                                                 <option value="Não Iniciado">Não Iniciado</option>
                                                 <option value="Cancelado">Cancelado</option>
                                                 <option value="Parado">Parado</option>
