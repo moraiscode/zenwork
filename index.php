@@ -338,7 +338,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                        <button type="button" class="btn btn-primary" onclick="addNewRow()">Salvar</button>
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="addNewRow()">Salvar</button>
                                     </div>
                                 </div>
                             </div>
