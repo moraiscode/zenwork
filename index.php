@@ -7,15 +7,13 @@
     <title>Zenwork - Equipe Nathan Amorim</title>
 
     <!-- Meta Tags para SEO -->
-    <meta name="description"
-        content="Posicione-se como a primeira escolha dos pacientes através do marketing médico. Atraia mais clientes e fortaleça sua presença online.">
+    <meta name="description" content="Posicione-se como a primeira escolha dos pacientes através do marketing médico. Atraia mais clientes e fortaleça sua presença online.">
     <meta name="keywords" content="marketing médico, pacientes, presença online, escolha dos pacientes">
     <meta name="author" content="Nathan Amorim">
 
     <!-- Meta Tags do Open Graph para redes sociais (Facebook, Twitter, etc.) -->
     <meta property="og:title" content="Marketing Médico: Sua Primeira Escolha">
-    <meta property="og:description"
-        content="Posicione-se como a primeira escolha dos pacientes através do marketing médico. Atraia mais clientes e fortaleça sua presença online.">
+    <meta property="og:description" content="Posicione-se como a primeira escolha dos pacientes através do marketing médico. Atraia mais clientes e fortaleça sua presença online.">
     <meta property="og:image" content="seo/metaotg.jpg">
     <meta property="og:url" content="https://app.nathan.marketing/">
     <meta property="og:type" content="website">
@@ -24,8 +22,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@SeuUsuarioNoTwitter">
     <meta name="twitter:title" content="Marketing Médico: Sua Primeira Escolha">
-    <meta name="twitter:description"
-        content="Posicione-se como a primeira escolha dos pacientes através do marketing médico. Atraia mais clientes e fortaleça sua presença online.">
+    <meta name="twitter:description" content="Posicione-se como a primeira escolha dos pacientes através do marketing médico. Atraia mais clientes e fortaleça sua presença online.">
     <meta name="twitter:image" content="seo/metaotg.jpg">
 
     <!-- FAVICON -->
@@ -37,8 +34,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -58,8 +54,7 @@
 <body>
     <div class="container-fluid position-relative d-flex p-0">
         <!-- Spinner Start -->
-        <div id="spinner"
-            class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
@@ -89,12 +84,10 @@
                 </div> -->
 
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link active"><i
-                            class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
 
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fas fa-users me-2"></i>Clientes</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-users me-2"></i>Clientes</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="#" class="dropdown-item">Atualizações</a>
                             <a href="#" class="dropdown-item">Lista de Tarefas</a>
@@ -106,8 +99,7 @@
                     </div>
 
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fas fa-clone me-2"></i>Copy</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-clone me-2"></i>Copy</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="#" class="dropdown-item">Briefing</a>
                             <a href="#" class="dropdown-item">Checklist</a>
@@ -116,8 +108,7 @@
                     </div>
 
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fas fa-wallet me-2"></i>Financeiro</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-wallet me-2"></i>Financeiro</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="#" class="dropdown-item">Contratos</a>
                             <a href="#" class="dropdown-item">Pagamentos</a>
@@ -130,8 +121,7 @@
                     <a href="#" class="nav-item nav-link"><i class="fab fa-wikipedia-w me-2"></i></i>Wiki</a>
 
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fas fa-tools me-2"></i>Ferramentas</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-tools me-2"></i>Ferramentas</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="#" class="dropdown-item">Whatsapp</a>
                             <a href="#" class="dropdown-item">ChatGPT</a>
@@ -141,8 +131,7 @@
                     </div>
 
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fas fa-cog me-2"></i>Configurações</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-cog me-2"></i>Configurações</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="#" class="dropdown-item">Usuários</a>
                             <a href="#" class="dropdown-item">Meu Perfil</a>
@@ -154,8 +143,7 @@
                     <hr class="hr amarelo" />
 
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="far fa-life-ring me-2"></i>Suporte</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-life-ring me-2"></i>Suporte</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="#" class="dropdown-item">Manuais</a>
                             <a href="#" class="dropdown-item">FAQ</a>
@@ -254,8 +242,7 @@
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img class="rounded-circle me-lg-2" src="img/nathan.jpg" alt=""
-                                style="width: 40px; height: 40px;">
+                            <img class="rounded-circle me-lg-2" src="img/nathan.jpg" alt="" style="width: 40px; height: 40px;">
                             <span class="d-none d-lg-inline-flex">Nathan Amorim</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
@@ -304,8 +291,8 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-pie fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Total Revenue</p>
-                                <h6 class="mb-0">$1234</h6>
+                                <p class="mb-2">Pagamentos</p>
+                                <h6 class="mb-0">R$ 8.152,73</h6>
                             </div>
                         </div>
                     </div>
@@ -316,70 +303,57 @@
             <!-- Recent Sales Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary text-center rounded p-4">
+
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Recent Salse</h6>
-                        <a href="">Show All</a>
+                        <h6 class="mb-0"><a href="" data-bs-toggle="modal" data-bs-target="#addRowModal"><i class="fas fa-user-plus"></i></a></h6>
+                        <a href="">Mostrar tudo</a>
                     </div>
+
                     <div class="table-responsive">
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="addRowModal" tabindex="-1" aria-labelledby="addRowModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-secondary rounded">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="addRowModalLabel">Adicionar Novo Trabalho</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" style="text-align: left;">
+                                        <div class="mb-3">
+                                            <label for="newTrabalho" class="form-label">Trabalho</label>
+                                            <input type="text" class="form-control" id="newTrabalho">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="newStatus" class="form-label">Status</label>
+                                            <input type="text" class="form-control" id="newStatus">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="addNewRow()">Salvar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <table class="table text-start align-middle table-bordered table-hover mb-0">
+
                             <thead>
                                 <tr class="text-white">
-                                    <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Invoice</th>
-                                    <th scope="col">Customer</th>
-                                    <th scope="col">Amount</th>
+                                    <!-- <th scope="col"><input class="form-check-input" type="checkbox"></th> -->
+                                    <th scope="col">Trabalho</th>
                                     <th scope="col">Status</th>
-                                    <th scope="col">Action</th>
+                                    <th scope="col">Copy</th>
+                                    <th scope="col">LP</th>
+                                    <th scope="col">Google</th>
+                                    <th scope="col">Instagram</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                            </tbody>
+
+                            <!-- <td><input class="form-check-input" type="checkbox"></td> -->
+                            <tbody id="tableBody"></tbody>
+
                         </table>
                     </div>
                 </div>
@@ -393,60 +367,40 @@
                     <div class="col-sm-12 col-md-6 col-xl-4">
                         <div class="h-100 bg-secondary rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-2">
-                                <h6 class="mb-0">Messages</h6>
-                                <a href="">Show All</a>
+                                <h6 class="mb-0">Atualizações</h6>
+                                <a href="">Mostrar tudo</a>
                             </div>
+
+                            <!-- Atualizações -->
                             <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt=""
-                                    style="width: 40px; height: 40px;">
+                                <img class="rounded-circle flex-shrink-0" src="img/felipe.jpg" alt="" style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
+                                        <h6 class="mb-0">Felipe Morais</h6>
+                                        <small>2 dias atrás</small>
                                     </div>
-                                    <span>Short message goes here...</span>
+                                    <span>Liberação de escopo do sistema</span>
                                 </div>
                             </div>
+
                             <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt=""
-                                    style="width: 40px; height: 40px;">
+                                <img class="rounded-circle flex-shrink-0" src="img/felipe.jpg" alt="" style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
+                                        <h6 class="mb-0">Felipe Morais</h6>
+                                        <small>1 semana</small>
                                     </div>
-                                    <span>Short message goes here...</span>
+                                    <span>Versão Mobile Concluída</span>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt=""
-                                    style="width: 40px; height: 40px;">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                    <span>Short message goes here...</span>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center pt-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt=""
-                                    style="width: 40px; height: 40px;">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                    <span>Short message goes here...</span>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-xl-4">
                         <div class="h-100 bg-secondary rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Calender</h6>
-                                <a href="">Show All</a>
+                                <h6 class="mb-0">Calendário</h6>
+                                <a href="">Mostrar tudo</a>
                             </div>
                             <div id="calender"></div>
                         </div>
@@ -454,27 +408,19 @@
                     <div class="col-sm-12 col-md-6 col-xl-4">
                         <div class="h-100 bg-secondary rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">To Do List</h6>
-                                <a href="">Show All</a>
+                                <h6 class="mb-0">Lista de Tarefas</h6>
+                                <a href="">Mostrar tudo</a>
                             </div>
                             <div class="d-flex mb-2">
-                                <input class="form-control bg-dark border-0" type="text" placeholder="Enter task">
-                                <button type="button" class="btn btn-primary ms-2">Add</button>
+                                <input class="form-control bg-dark border-0" type="text" placeholder="Adicionar Tarefa">
+                                <button type="button" class="btn btn-primary ms-2">
+                                    Adicionar</button>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox">
+                                <input class="form-check-input m-0" type="checkbox" checked>
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
+                                        <span><del>Lorem ipsum dolor sit amet</del></span>
                                         <button class="btn btn-sm"><i class="fa fa-times"></i></button>
                                     </div>
                                 </div>
@@ -483,8 +429,18 @@
                                 <input class="form-check-input m-0" type="checkbox" checked>
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span><del>Short task goes here...</del></span>
-                                        <button class="btn btn-sm text-primary"><i class="fa fa-times"></i></button>
+                                        <span><del>Lorem ipsum dolor sit amet</del></span>
+                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-2">
+                                <input class="form-check-input m-0" type="checkbox" checked>
+                                <div class="w-100 ms-3">
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <span><del>Lorem ipsum dolor sit amet</del></span>
+                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                        <!-- <button class="btn btn-sm text-primary"><i class="fa fa-times"></i></button> -->
                                     </div>
                                 </div>
                             </div>
@@ -492,7 +448,7 @@
                                 <input class="form-check-input m-0" type="checkbox">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
+                                        <span>Lorem ipsum dolor sit amet</span>
                                         <button class="btn btn-sm"><i class="fa fa-times"></i></button>
                                     </div>
                                 </div>
@@ -501,7 +457,7 @@
                                 <input class="form-check-input m-0" type="checkbox">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
+                                        <span>Lorem ipsum dolor sit amet</span>
                                         <button class="btn btn-sm"><i class="fa fa-times"></i></button>
                                     </div>
                                 </div>
@@ -518,11 +474,13 @@
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Nathan Amorim</a>, Todos os Direitos Reservados.
+                            &copy; <a href="https://nathan.marketing/" target="_blank">Nathan Amorim</a>, Todos os
+                            Direitos Reservados.
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
 
-                            Desenvolvido por <a href="#">Felipe Morais</a>
+                            Desenvolvido por <a href="https://www.instagram.com/moraiscode/" target="_blank">Felipe
+                                Morais</a>
                         </div>
                     </div>
                 </div>
@@ -550,6 +508,10 @@
             }
         }
     </script>
+
+    <!-- Alterar classes dos botões -->
+    <script src="js/alterarBotao.js"></script>
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
