@@ -326,16 +326,24 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="newStatus" class="form-label">Status</label>
-                                            <input type="text" class="form-control" id="newStatus">
+                                            <select class="form-select" id="newStatus">
+                                                <option value="Aguardando">Aguardando</option>
+                                                <option value="Não Iniciado">Não Iniciado</option>
+                                                <option value="Cancelado">Cancelado</option>
+                                                <option value="Parado">Parado</option>
+                                                <option value="Iniciado">Iniciado</option>
+                                                <option value="Concluído">Concluído</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="addNewRow()">Salvar</button>
+                                        <button type="button" class="btn btn-primary" onclick="addNewRow()">Salvar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
 
                         <table class="table text-start align-middle table-bordered table-hover mb-0">
 
