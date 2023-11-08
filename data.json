@@ -13,7 +13,7 @@
     {
         "id": "_1jk9usvxc",
         "trabalho": "Dr. Aberto Benedik",
-        "status": "Aguardando",
+        "status": "Iniciado",
         "buttons": [
             "N\u00e3o",
             "N\u00e3o",
@@ -178,7 +178,7 @@
     {
         "id": "_ld83roklm",
         "trabalho": "Dr. Hyago Viana",
-        "status": "Aguardando",
+        "status": "Conclu\u00eddo",
         "buttons": [
             "N\u00e3o",
             "N\u00e3o",
@@ -189,7 +189,7 @@
     {
         "id": "_u06692vre",
         "trabalho": "Dr. Douglas Vin\u00edcius",
-        "status": "Aguardando",
+        "status": "Cancelado",
         "buttons": [
             "N\u00e3o",
             "N\u00e3o",

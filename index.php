@@ -351,9 +351,14 @@
                             <thead>
                                 <tr class="text-white">
                                     <!-- <th scope="col"><input class="form-check-input" type="checkbox"></th> -->
+<<<<<<< HEAD
                                     <th scope="col" style="padding-right: 8em;">Trabalho</th>
                                     <th scope="col" style="padding-right: 7em;">Status</th>
                                     <!-- <th scope="col" style="padding-right: 7em;">Status</th> -->
+=======
+                                    <th scope="col" style="padding-right: 6em;">Trabalho</th>
+                                    <th scope="col">Status</th>
+>>>>>>> parent of 3293805 (udpate)
                                     <th scope="col">Copy</th>
                                     <th scope="col">LP</th>
                                     <th scope="col">Google</th>

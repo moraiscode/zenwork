@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         saveData();
     }
 
+<<<<<<< HEAD
     window.addRow = function (trabalho, status, buttons) {
         var newItem = {
             id: generateUniqueId(),
@@ -28,15 +29,30 @@ document.addEventListener('DOMContentLoaded', function () {
             status: status,
             buttons: buttons
         };
+=======
+    window.addNewRow = function () {
+        var newTrabalho = document.getElementById('newTrabalho').value;
+        var newStatus = document.getElementById('newStatus').value;
+>>>>>>> parent of 3293805 (udpate)
 
-        data.push(newItem);
+        if (newTrabalho && newStatus) {
+            addRow(newTrabalho, newStatus, ['NÃO', 'NÃO', 'NÃO', 'NÃO']);
+            document.getElementById('newTrabalho').value = '';
+            document.getElementById('newStatus').value = '';
+            document.getElementById('addRowModal').classList.remove('show');
+            document.body.classList.remove('modal-open');
+            document.body.style.paddingRight = '';
 
-        // Salvar os dados atualizados no JSON
-        saveData();
+            // Adicione esta linha para carregar os dados após adicionar uma nova linha
+            renderTable();
+        }
     };
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> parent of 3293805 (udpate)
     window.changeStatus = function (button) {
         var uniqueId = button.getAttribute('data-id');
         var buttonIndex = button.getAttribute('data-index');
@@ -105,6 +121,8 @@ document.addEventListener('DOMContentLoaded', function () {
         xhr.send();
     }
 
+
+
     function renderTable() {
         // Limpar a tabela
         document.getElementById('tableBody').innerHTML = '';
@@ -112,17 +130,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // Adicionar linhas à tabela com base nos dados carregados
         data.forEach(function (item) {
             var row = `<tr data-id="${item.id}">
-                            <td contenteditable="true" class="trabalho w-content">${item.trabalho}</td>
-                            <td>
-                                <select class="form-select" onchange="changeStatusDropdown(this, '${item.id}')">
-                                    <option value="Aguardando" ${item.status === 'Aguardando' ? 'selected' : ''}>Aguardando</option>
-                                    <option value="Não Iniciado" ${item.status === 'Não Iniciado' ? 'selected' : ''}>Não Iniciado</option>
-                                    <option value="Cancelado" ${item.status === 'Cancelado' ? 'selected' : ''}>Cancelado</option>
-                                    <option value="Parado" ${item.status === 'Parado' ? 'selected' : ''}>Parado</option>
-                                    <option value="Iniciado" ${item.status === 'Iniciado' ? 'selected' : ''}>Iniciado</option>
-                                    <option value="Concluído" ${item.status === 'Concluído' ? 'selected' : ''}>Concluído</option>
-                                </select>
-                            </td>
+                            <td contenteditable="true" class="trabalho">${item.trabalho}</td>
+                            <td contenteditable="true" class="status">${item.status}</td>
                             <td><button id="btn_${item.id}_1" class="btn btn-light" data-id="${item.id}" data-index="1" onclick="changeStatus(this)">${item.buttons[0]}</button></td>
                             <td><button id="btn_${item.id}_2" class="btn btn-light" data-id="${item.id}" data-index="2" onclick="changeStatus(this)">${item.buttons[1]}</button></td>
                             <td><button id="btn_${item.id}_3" class="btn btn-light" data-id="${item.id}" data-index="3" onclick="changeStatus(this)">${item.buttons[2]}</button></td>
@@ -147,32 +156,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-
-    window.changeStatusDropdown = function (selectElement, itemId) {
-        var selectedStatus = selectElement.value;
-
-        // Encontrar o item no array de dados
-        var selectedItem = data.find(item => item.id === itemId);
-
-        // Atualizar o status no item encontrado
-        if (selectedItem) {
-            selectedItem.status = selectedStatus;
-
-            // Salvar os dados atualizados no JSON
-            saveData();
-        }
-    };
-
-    window.saveData = function () {
-        // Salvar os dados no JSON (substitua esta parte pelo seu código de salvamento)
-        // Exemplo simples para ilustração:
-        var jsonString = JSON.stringify(data);
-        localStorage.setItem('data', jsonString);
-
-        // Recarregar a tabela com os dados atualizados
-        renderTable();
-    };
-
 
 
 

@@ -2,7 +2,11 @@
     {
         "id": "_8jk9usvsc",
         "trabalho": "Projeto A",
+<<<<<<< HEAD
         "status": "Parado",
+=======
+        "status": "Iniciado",
+>>>>>>> parent of 3293805 (udpate)
         "buttons": [
             "NDA",
             "NDA",
@@ -24,7 +28,7 @@
     {
         "id": "_7ztec2scb",
         "trabalho": "Projeto C",
-        "status": "Aguardando",
+        "status": "Conclu\u00eddo",
         "buttons": [
             "N\u00c3O",
             "SIM",
@@ -46,7 +50,7 @@
     {
         "id": "_qv9wtxrmk",
         "trabalho": "gdfsfsdfsdgf",
-        "status": "Aguardando",
+        "status": "dsagadasdasd",
         "buttons": [
             "N\u00c3O",
             "N\u00c3O",
