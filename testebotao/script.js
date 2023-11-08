@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addRow = function (trabalho, status, buttons) {
         var newItem = {
-            id: generateId(),
+            id: generateUniqueId(),
             trabalho: trabalho,
             status: status,
             buttons: buttons
@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Salvar os dados atualizados no JSON
         saveData();
     };
+
 
 
     window.changeStatus = function (button) {
@@ -56,21 +57,30 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Atualizar o status no array de dados
-        var rowIndex = button.parentNode.parentNode.rowIndex - 1;
-        data.find(item => item.id === uniqueId).status = document.querySelector(`[data-id="${uniqueId}"] .status`).innerText;
-        data.find(item => item.id === uniqueId).buttons[buttonIndex - 1] = statuses[nextIndex];
-        saveData();
+        var item = data.find(item => item.id === uniqueId);
+        if (item) {
+            item.status = document.querySelector(`[data-id="${uniqueId}"] .status`).innerText;
+            item.buttons[buttonIndex - 1] = statuses[nextIndex];
+            saveData();
+        }
     };
+
 
 
     function saveData() {
         // Salvar os dados em um arquivo JSON no servidor
         var jsonData = JSON.stringify(data);
         var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                console.log("Dados salvos com sucesso!");
+            }
+        };
         xhr.open('POST', 'saveData.php', true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(jsonData);
     }
+
 
     function loadData() {
         // Carregar os dados do arquivo JSON no servidor
@@ -162,6 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Recarregar a tabela com os dados atualizados
         renderTable();
     };
+
 
 
 

@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addRow = function (trabalho, status, buttons) {
         var newItem = {
-            id: generateId(),
+            id: generateUniqueId(),
             trabalho: trabalho,
             status: status,
             buttons: buttons
@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Salvar os dados atualizados no JSON
         saveData();
     };
+
 
     window.changeStatus = function (button) {
         var uniqueId = button.getAttribute('data-id');
@@ -80,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Recarregar a tabela com os dados atualizados
         renderTable();
     };
+
 
 
     function loadData() {
